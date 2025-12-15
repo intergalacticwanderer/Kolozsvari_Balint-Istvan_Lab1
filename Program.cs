@@ -35,5 +35,15 @@ app.MapControllerRoute(
     pattern: "{controller=NameAge}/{action=Greet}/{id?}")
     .WithStaticAssets();
 
+app.MapControllerRoute(
+    name: "ViewBag",
+    pattern: "{controller=Viewb}/{action=Exer2}/{id?}")
+    .WithStaticAssets();
+
+app.MapControllerRoute(
+    name: "StudentInfo",
+    pattern: "{controller=Student}/{action=info}/{id?}")
+    .WithStaticAssets();
+
 
 app.Run();
